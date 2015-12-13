@@ -1,18 +1,18 @@
 
 # Install Java
-sudo apt-get -y update
+sudo -y apt-get  update
 
 
 
-sudo apt-get install -y tar
-sudo apt-get install -y unzip
+sudo -y apt-get install  tar
+sudo -y apt-get install  unzip
 
 #install java
 
-sudo add-apt-repository -y ppa:webupd8team/java
-sudo apt-get update
+sudo -y add-apt-repository  ppa:webupd8team/java
+
 echo oracle-java8-installer shared/accepted-oracle-license-v1-1 select true | sudo /usr/bin/debconf-set-selections
-sudo apt-get -y install oracle-java8-installer
+sudo -y apt-get  install oracle-java8-installer
 export JAVA_HOME=/usr/lib/jvm/java-8-oracle/
 export JRE_HOME=/usr/lib/jvm/java-8-oracle/jre/
 

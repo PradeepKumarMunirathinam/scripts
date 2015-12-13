@@ -25,4 +25,12 @@ sudo mkdir /opt/spark-1.5.0
 #Install R from marutter/rrutter repository
 echo 'deb http://ftp.iitm.ac.in/cran//bin/linux/ubuntu precise/' | sudo tee -a /etc/apt/sources.list
 sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E084DAB9
+sudo apt-get -y update
+sudo add-apt-repository -y ppa:marutter/rrutter
 sudo apt-get update
+sudo apt-get install -y unixodbc-dev libmysqlclient-dev libxml2-dev
+sudo apt-get install -y r-base r-base-dev r-cran-rjava r-cran-xml r-cran-rodbc 
+sudo apt-get install -y gdebi-core
+
+#Install ODBC driver - will be used by R
+sudo apt-get install -y libmyodbc

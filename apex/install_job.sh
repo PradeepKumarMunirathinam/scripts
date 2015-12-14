@@ -12,4 +12,4 @@ export JRE_HOME=/usr/lib/jvm/java-8-oracle/jre/
 
 #rundeck
 sudo wget -nv http://dl.bintray.com/rundeck/rundeck-deb/rundeck-2.5.1-1-GA.deb -O /tmp/rundeck.deb
-sudo dpkg -i /tmp/rundeck.deb && rm /tmp/rundeck.deb
+sudo dpkg -i /tmp/rundeck.deb 
